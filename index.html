@@ -39,7 +39,7 @@
 
                         </ul>
 
-                        <ul class="navbar-nav ms-auto">
+                        <!--<ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
                             </li>
@@ -49,7 +49,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </nav>
@@ -142,28 +142,29 @@
             <div class="form-container">
                 <h2 class="text-center">Get In Touch</h2>
 
-                <p class="text-center">Web form currently not working.</p>
-                <p class="text-center">please email your query to</p>
-                <p class="text-center"><a href="mailto:johnlockhamphotography@gmail.com">johnlockhamphotography@gmail.com</a></p>
-                <form class="col-10 col-lg-4 mx-auto" id="contact_form">
-                    <div class="mb-3">
-                        <label for="name" class="visually-hidden">Name</label>
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                <p class="text-center mb-2">please email your query to:</p>
+                <p class="text-center mb-2">johnlockhamphotography@gmail.com</p>
+                <p class="text-center">or use the web-form below</p>
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <form action="https://formspree.io/f/mzbobval" method="post" id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="visually-hidden">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Full name" required>
+                                <label for="email" class="visually-hidden">Email address</label>
+                                <input type="email" class="form-control" id="email" name="_replyto" placeholder="Email" required>
+                                <label for="message" class="visually-hidden">Message</label>
+                                <textarea name="message" class="form-control" id="message" placeholder="Message" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group row">
+                                <button id="submit" type="submit" class="btn">Submit</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="visually-hidden">Email</label>
-                        <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
-                    </div>
-                    <div class="mb-3">
-                        <textarea name="message" rows="4" class="form-control" id="message" placeholder="Message" required></textarea>
-                        <label class="visually-hidden" for="message">Message</label>
-                    </div>
-                    <button type="submit" id="js_send" disabled>SEND</button>
-
-                </form>
+                </div>
             </div>
             <div class="text-center">
-                <p>Follow me on:</p>
+                <!--<p>Follow me on:</p>
                 <nav class="col-lg-2 mx-auto">
                     <ul class="navbar navbar-light">
                         <li class="nav-item">
@@ -176,7 +177,7 @@
                             <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
-                </nav>
+                </nav>-->
             </div>
 
         </article>
@@ -199,13 +200,13 @@
     <div class="portraits-gallery visually-hidden">
         <a href="images/john_lockham_portrait_photography_based_in_hull_Beautiful_female_portrait_2.jpg" title="Female Portrait"></a>
         <a href="images/john_lockham_portrait_photography_based_in_hull_beautiful_female_portrait.jpg" title="Female Portrait"></a>
-        <a href="images/john_lockham_portrait_photography_based_in_hull_moody_young_boy.jpg" title="grumpy child"></a>
+        <a href="images/john_lockham_portrait_photography_based_in_hull_moody_young_boy.jpg" title="Grumpy child"></a>
         <a href="images/john_lockham_portrait_photography_based_in_hull_Beautiful_female_portrait_3.jpg" title="Female Portrait"></a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
     <script src="jquery.js"></script>
-    <script src="email.js"></script>
+    <script src="contact.js"></script>
     <!-- Magnific Popup core JS file -->
     <script src="jquery.magnific-popup.js"></script>
     <script>
